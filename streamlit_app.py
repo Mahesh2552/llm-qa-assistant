@@ -32,8 +32,20 @@ with st.spinner(f"Loading index from {EMB_DIR} and models… (first run may take
         st.error(f"Failed to load models or index: {e}")
         st.stop()
 
-st.sidebar.header("Settings")
-top_k = st.sidebar.slider("Chunks to use as context", 2, 10, TOP_K)
+st.sidebar.header("Try asking questions like")
+st.sidebar.markdown(
+    """
+Questions this assistant can answer from your documents:
+
+- **Leaves:** How many casual leaves are available per year? How many sick leaves do we get?
+- **Working hours:** What are the standard working hours (and flexible hours rules)?
+- **Remote work:** Can employees work remotely?
+- **Holidays (2025):** What are the public holiday dates?
+- **Company policies:** What is the advance notice required for planned leave?
+- **Product FAQ:** What does the analytics product do? How frequently is data refreshed?
+- **Data analytics tips:** What data quality checks should I run before analysis?
+"""
+)
 
 question = st.text_input("Your question", placeholder="e.g. How many casual leaves are available?")
 if not question:
