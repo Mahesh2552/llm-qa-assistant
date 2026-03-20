@@ -40,12 +40,12 @@ st.sidebar.markdown(
     """
 Questions this assistant can answer from your documents:
 
-- **Leaves:** How many casual leaves are available per year? How many sick leaves do we get?
+- **Leaves:** How many casual leaves are available per year?
 - **Working hours:** What are the standard working hours (and flexible hours rules)?
-- **Remote work:** Can employees work from home? If yes, for how many days per week?
+- **Remote work:** Can employees work from home?
 - **Holidays (2025):** What are the public holiday dates?
-- **Company policies:** What is the advance notice required for planned leave?
-- **Product FAQ:** What does the analytics product do? How frequently is data refreshed?
+- **Product FAQ:** What does the analytics product do? 
+                   How frequently is data refreshed?
 - **Data analytics tips:** What data quality checks should I run before analysis?
 """
 )
